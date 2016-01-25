@@ -1,14 +1,15 @@
-describe('number', function() {
-  it("is false if user enters a number less than one", function() {
-    expect(number(0)).to.equal(false);
+describe('Contact', function() {
+  it("creates a new contact with the given properties", function() {
+    var testContact = new Contact("Rita","Moreno");
+    expect(testContact.firstName).to.equal("Rita");
+    expect(testContact.lastName).to.equal("Moreno");
   });
-  it("is false if user enters a non number", function() {
-    expect(number("brad")).to.equal("NaN");
+  it("adds the fullName method to all contacts", function() {
+    var testContact = new Contact("Sherlock","Holmes");
+    expect(testContact.fullName()).to.equal("Sherlock Holmes");
   });
-  it("returns 'ping' if number is divisible by 3", function() {
-    expect(number(3)).to.equal("ping");
-  });
-  it("return 'pong' if number is divisible by 5", function() {
-    expect(number(10)).to.equal("pong");
+  it("adds the fullAddress method to all contacts", function() {
+    var testContact = new Contact("Sherlock","Holmes", "123 Main Street","Portland", "Oregon");
+    expect(testContact.fullAddress()).to.equal("123 Main Street, Portland, Oregon");
   });
 });

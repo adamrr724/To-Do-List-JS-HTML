@@ -5,61 +5,28 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Address book</title>
+    <title>To Do List</title>
   </head>
   <body>
     <div class="container">
-      <h1>Address book</h1>
+      <h1>To do List</h1>
 
       <div class="row">
         <div class="col-md-6">
-          <h2>Add a contact:</h2>
-          <form id="new-contact">
+          <h2>Add a to do list item:</h2>
+          <form id="list">
             <div class="form-group">
-              <label for="new-first-name">First name</label>
-              <input type="text" class="form-control" id="new-first-name">
-            </div>
-            <div class="form-group">
-              <label for="new-last-name">Last name</label>
-              <input type="text" class="form-control" id="new-last-name">
-            </div>
-
-            <div class="form-group">
-              <label for="new-address">Address</label>
-              <input type="text" class="form-control" id="new-address">
-            </div>
-
-            <div class="form-group">
-              <label for="new-city">City</label>
-              <input type="text" class="form-control" id="new-city">
-            </div>
-
-            <div class="form-group">
-              <label for="new-state">State</label>
-              <input type="text" class="form-control" id="new-state">
+              <label for="locations">To Do</label>
+              <input type="text" class="form-control" id="toDo">
             </div>
 
             <button type="submit" class="btn">Add</button>
           </form>
 
-          <h2>Contacts:</h2>
-          <ul id="contacts">
+          <h2>Here are the things you still need to do!</h2>
+          <ul id="items">
 
           </ul>
-        </div>
-
-        <div class="col-md-6">
-          <div id="show-contact">
-            <h2></h2>
-
-            <p>First name: <span class="first-name"></span></p>
-            <p>Last name: <span class="last-name"></span></p>
-            <p>Addresses:</p>
-            <ul>
-                <li><span class="fullAddress"></span></p></li>
-            </ul>
-
-          </div>
         </div>
 
       </div>
